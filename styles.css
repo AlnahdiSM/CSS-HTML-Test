@@ -1,0 +1,277 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-color: #f7fafc;
+    color: #1a202c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .form-container {
+   
+    /* padding: 3rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+  }
+  
+  .form-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 364px;
+  }
+  
+  .form-content h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .form-content p {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .input-group {
+    width: 100%;
+    max-width: 364px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+  }
+  
+  .input-field {
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 2px 4px;
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+
+  }
+  
+  .input-field img {
+    position: absolute;
+    top: 50%;
+    margin-inline-start: 8px;
+    transform: translate(0%,-50%);
+  }
+  
+  .input-field input {
+    width: 100%;
+    padding:0 2.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background-color: #f0edff;
+    height: 52px;
+  }
+  
+  .input-field input:focus {
+    border-color: #cbd5e0;
+    background-color: #fff;
+    outline: none;
+  }
+  .submit-btn-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+  }
+  
+  .login-button {
+    display: block;
+    width: 124px;
+    height: 52px;
+    background: linear-gradient(to right, #9181f4, #5038ed);
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.16);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    
+  }
+   
+  .login-button:hover {
+    background: #4c4ff0;
+  }
+  
+  .divider {
+    margin: 2rem 0;
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .divider-line {
+    position: static;
+    width: 100%;
+    max-width: 182px;
+    border:1.5px solid #F0EDFF;
+    margin: 0;
+
+  }
+  
+  .divider span {
+    background-color: #fff;
+    padding: 0 1rem;
+    font-weight: 400;
+    color: #525252;
+    text-wrap: nowrap;
+  }
+  .divider b {
+   
+    font-weight: bold;
+  }
+  
+  .social-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+  }
+  
+  .social-button {
+    display: flex;
+    width: 100%;
+    max-width: 364px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    border: 1px solid #f0edff;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .social-button img {
+    width: 30px;
+  }
+  
+  .social-button span {
+    margin-inline-start: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    color: #1C1C1C;
+  }
+  
+  .social-button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container {
+    display: none;
+    background-color: #e0e7ff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    .image-container {
+      display: flex;
+      flex: 1;
+      width: 100%;
+     
+    }
+  
+    .image-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: url('./Rectangle 4.png') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .image-content .image {
+      width: 100%;
+      height: 524px;
+      max-width: 412px;
+      background-color: rgba(255, 255, 255, 0.25);
+      border-radius: 2rem;
+      text-align: center;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      position: relative;
+    }
+    .image-content p {
+        margin: 0;
+        width: 184px;
+      padding: 26px;
+      font-size: 2rem;
+      font-weight: bold;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+  
+    .icon-container {
+      position: absolute;
+      top: 347px;
+      left: -25px;
+      transform: translateY(-50%);
+      width: 79px;
+      height: 79px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .background-image {
+      position: absolute;
+      bottom: 0;
+      right:-30px ;
+      z-index: 0s;
+    }
+  }
+  
